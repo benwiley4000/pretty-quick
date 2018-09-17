@@ -7,7 +7,7 @@ const mri = require('mri');
 
 const prettyQuick = require('..').default;
 
-const args = mri(process.argv.slice(2));
+const args = mri(process.argv.slice(2), { noRestage: 'no-restage' });
 
 let success = true;
 prettyQuick(
